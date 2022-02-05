@@ -1,24 +1,26 @@
-@font-face {
-    font-family: 'Roboto Mono', monospace;
-    src: url('RobotoMono-VariableFont_wght.ttf') format("truetype-variations");
-    font-weight: 100 700;
+body {
+	height: 100vh;
+	text-align: center;
+	padding: 50px 50px 200px 50px;
+	background-color: black;
 }
 
 h1 {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 100;
+	font-variation-settings: 'wght' 100;
     font-size: 100px;
-    animation: variable 100ms infinite both;
+	color: white;
+    animation: variable 5000ms infinite both;
 }
 
 @keyframes variable {
 	0% {
-		font-weight: 100;
+		font-variation-settings: 'wght' 100;
 	}
 	50% {
-		font-weight: 700;
+		font-variation-settings: 'wght' 700;
 	}
 	100% {
-		font-weight: 100;
+		font-variation-settings: 'wght' 100;
 	}
 }
